@@ -4,7 +4,7 @@ email: diffalot@diff.mx
 description: > # this means to ignore newlines until "baseurl:"
         the online collection of Andrew Davis
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://diff.mx/" # the base hostname & protocol for your site
+url: "https://diff.mx" # the base hostname & protocol for your site
 twitter_username: diffalot
 gitlab_username:  diffalot
 
