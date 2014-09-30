@@ -1,25 +1,14 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "starting this blog over"
 date:   2014-09-29 11:28:13
-categories: jekyll update
+categories: welcome
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+a text post, soon to be replaced.
 
-Jekyll also offers powerful support for code snippets:
+A number of methods exist to 'harden' mailto links against harvesting. However, these methods are not guaranteed to remain effective if the technology of harvesting robots is improved. Form based alternatives however, experience similar challenges with preventing spam,[6] which has led to the introduction of CAPTCHAs, 'humanity checks' and other anti-spam measures.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+Additionally, if no email client or webmail service has been explicitly established to act as the default, one may still exist if an email client was pre-installed by the computer vendor but never used or configured by the user. In this case, upon clicking a mailto link, the user will be subjected to a volley of technical questions by the unconfigured email client.
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
-
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+The mailto URI scheme, as registered with the Internet Assigned Numbers Authority (IANA), defines the scheme for Simple Mail Transfer Protocol (SMTP) email addresses. It allows users clicking a link in a website to send an e-mail without first having to copy the destination e-mail address and open an e-mail client. Though its use is not strictly defined, URLs of this form are intended to be used to open the new message window of the user's email client when the URL is activated, with the address as defined by the URL in the "To:" field.

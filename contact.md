@@ -4,7 +4,7 @@ title: Contact
 permalink: /contact/
 ---
 
-if you would like to get in touch with me please [email me using my PGP public key](mailto:diffalot@diff.mx) or [call or text (601) 255-4393](tel:601-255-4393).
+if you would like to contact me, please [email me using my PGP public key](mailto:diffalot@diff.mx) or [call or text (601) 255-4393](tel:601-255-4393).
 
     -----BEGIN PGP PUBLIC KEY BLOCK-----
     Version: GnuPG v2
