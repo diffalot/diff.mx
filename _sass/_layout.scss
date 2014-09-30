@@ -175,6 +175,11 @@
 
     > li {
         margin-bottom: $spacing-unit;
+
+        > p {
+          font-family: Georgia, "Times New Roman", serif;
+        }
+
     }
 }
 
@@ -237,5 +242,9 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+
+    > p {
+        font-family: Georgia, "Times New Roman", serif;
     }
 }
