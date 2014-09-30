@@ -5,8 +5,6 @@ date:   2014-09-29 11:28:13
 categories: welcome
 ---
 
-a text post, soon to be replaced.
-
 A number of methods exist to 'harden' mailto links against harvesting. However, these methods are not guaranteed to remain effective if the technology of harvesting robots is improved. Form based alternatives however, experience similar challenges with preventing spam,[6] which has led to the introduction of CAPTCHAs, 'humanity checks' and other anti-spam measures.
 
 Additionally, if no email client or webmail service has been explicitly established to act as the default, one may still exist if an email client was pre-installed by the computer vendor but never used or configured by the user. In this case, upon clicking a mailto link, the user will be subjected to a volley of technical questions by the unconfigured email client.
