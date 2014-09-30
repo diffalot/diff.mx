@@ -15,7 +15,7 @@ layout: default
 
 	{{ post.excerpt }}
 
-	<p class="post-ellipsis"><a href="{{ post.url | prepend: site.baseurl }}">&#8230</a></p>
+	<span class="post-ellipsis"><a href="{{ post.url | prepend: site.baseurl }}">&#8230</a></span>
       </li>
     {% endfor %}
   </ul>

@@ -178,13 +178,14 @@
 
         > p {
           font-family: Georgia, "Times New Roman", serif;
+          text-align: justify;
         }
 
     }
 }
 
 .post-ellipsis {
-	text-align: right;
+	float: right;
 	margin-right: 12%;
 }
 
@@ -246,5 +247,6 @@
 
     > p {
         font-family: Georgia, "Times New Roman", serif;
+	text-align: justify;
     }
 }
