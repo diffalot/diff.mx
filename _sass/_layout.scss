@@ -177,7 +177,7 @@
         margin-bottom: $spacing-unit;
 
         > p {
-          font-family: Georgia, "Times New Roman", serif;
+          font-family: 'Merriweather', Georgia, "Times New Roman", serif;
           text-align: justify;
         }
 
@@ -246,7 +246,11 @@
     }
 
     > p {
-        font-family: Georgia, "Times New Roman", serif;
+        font-family: 'Merriweather', Georgia, "Times New Roman", serif;
         text-align: justify;
     }
+}
+
+code {
+    font-family: 'Source Code Pro';
 }
