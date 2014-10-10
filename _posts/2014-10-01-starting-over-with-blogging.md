@@ -2,8 +2,8 @@
 layout: post
 title:  "Starting Over With Blogging"
 date:   2014-10-01 12:00:00
-categories: [diff.mx, archives]
-tags: [blogging, journaling]
+categories: [diff.mx]
+tags: [blogging, journaling, personal archives]
 ---
 
 i'm starting over with blogging.  i don't know what i'm going to write about, i
@@ -23,5 +23,5 @@ things i know my blog needs:
 2. compiled list of offsite links &mdash; further handy reference material
 3. __this is a biggie that will be tough to develop__ some way to aggregate all
    the things i favorite across social platforms: my feed reader, twitter,
-youtube &mdash; i want to be able to searhc through media that i've liked and
+youtube &mdash; i want to be able to search through media that i've liked and
 quickly access it or share it
