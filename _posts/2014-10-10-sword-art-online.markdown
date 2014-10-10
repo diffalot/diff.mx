@@ -9,7 +9,7 @@ tags: [anime, mmorpg, virtual reality, sword art online, ptsd, video game, femin
 i've been enjoying watching [_sword art
 online_](http://en.wikipedia.org/wiki/Sword_Art_Online) lately [(it's on
 crunchroll right now)](http://www.crunchyroll.com/sword-art-online).  the first
-half of the first season was a lightly entertaining jaunt into full emersion
+half of the first season was a lightly entertaining jaunt into emersive
 virtual reality (full body neurological haptic control) with a evil mad
 scientist serial killer bad guy, but the second half of that first season was
 atrocious in it's use of [the damsel in distress
