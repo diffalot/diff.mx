@@ -4,7 +4,14 @@ title: Contact
 permalink: /contact/
 ---
 
-if you would like to contact me, please [email me using my PGP public key](mailto:diffalot@diff.mx) or [call or text (601) 255-4393](tel:601-255-4393).
+i am available for hire on JavaScript and node.js projects, please [download my
+resume](https://diff.mx/resume-Andrew_Davis.pdf) and
+[contact](mailto:diffalot@diff.mx) [me](tel:601-255-4393) if you like what you
+find.
+
+if you would like to contact me, please [email me using my PGP public
+key](mailto:diffalot@diff.mx) or [call or text (601)
+255-4393](tel:601-255-4393).
 
     -----BEGIN PGP PUBLIC KEY BLOCK-----
     Version: GnuPG v2
