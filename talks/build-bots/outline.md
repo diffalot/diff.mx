@@ -1,11 +1,11 @@
 # BUILD YOU SOME BOTS FOR GREAT GOOD
 
-#### or, the merits of playing with emergent intelligences and the human tendancy to anthropomorphise everything
+##### or, the merits of playing with emergent intelligences and the human tendancy to anthropomorphise everything
 
-### [Andrew Davis](https://diff.mx)
-### [@diffalot](https://twitter.com/diffalot)
+#### [Andrew Davis](https://diff.mx)
+#### [@diffalot](https://twitter.com/diffalot)
 
-## https://diff.mx/talks/build-bots
+### https://diff.mx/talks/build-bots
 
 ---
 
