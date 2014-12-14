@@ -5,11 +5,11 @@
 ### [Andrew Davis](https://diff.mx)
 ### [@diffalot](https://twitter.com/diffalot)
 
-## https://diff.mx/talks/bots
+## https://diff.mx/talks/build-bots
 
 ---
 
-## What is a Twitter Bot
+## What is a Twitter Bot?
 
 ----
 
@@ -54,15 +54,17 @@
 
 # Structuring a Bot
 
-* listening and responding
-
 ----
 
 # LEARN YOUR BOT AN ETHICS
 
 Bots can be used to harass or violate Twitter's terms of service.
 
-**Make sure your bot *is not* taking advantage of bad situations and making them worse.**
+**Make sure your bot **is not** taking advantage of bad situations and making them worse.**
+
+----
+
+# Structuring a Bot
 
 ----
 
