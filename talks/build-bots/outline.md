@@ -9,7 +9,7 @@
 
 ---
 
-## What is a Twitter Bot?
+# What is a Twitter Bot?
 
 ----
 
@@ -48,11 +48,25 @@
 
 ---
 
+# Text Generation
+
+----
+
+## Mad Libs
+
+----
+
+## Markov Chain Generators
+
+---
+
 # Why Build Bots?
 
 ---
 
 # Structuring a Bot
+
+![@autospeare](images/autospeare.svg)
 
 ----
 
@@ -65,11 +79,6 @@ Bots can be used to harass or violate Twitter's terms of service.
 ----
 
 # Structuring a Bot
-
-----
-
-# ~LEARN YOU AN ETHICS~
-# Asimov's 3 Laws
 
 ----
 
@@ -129,19 +138,7 @@ stream.on('tweet',function(tweet){
 
 ---
 
-# Text Generation
-
-----
-
-## Mad Libs
-
-----
-
-## Markov Chain Generators
-
----
-
-## For Further Reading
+# For Further Reading
 
 * [Bot Summit 2014](http://tinysubversions.com/botsummit/2014/)
 * [Bot Weekly Newsletter](http://tinyletter.com/bot-weekly/)
