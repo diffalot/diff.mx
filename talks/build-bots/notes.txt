@@ -1,0 +1,6 @@
+http://www.meetup.com/Jackson-Area-Web-And-App-Developers/events/218927881/
+http://www.meetup.com/Jackson-Area-Web-And-App-Developers/events/218927881/
+
+ffmpeg -r 45 -i out-6.ogv -t 2:30 -f image2pipe -vcodec ppm -r 15 - | convert -resize 960x-1 -delay 1/10 -loop 0 - gif:- | convert -fuzz 5% -layers Optimize - eliza.gif
+
+ffmpeg -r 45 -i out-6.ogv -t 2:30 -c copy -r 15 clip.ogv
