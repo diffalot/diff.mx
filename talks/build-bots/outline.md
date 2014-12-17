@@ -126,7 +126,7 @@ ELIZA, running the DOCTOR script, provided a "parody" of "the responses of a non
 * Text Bots
     * [olivia taters](https://twitter.com/oliviataters)
     * [Appropriate Tributes](https://twitter.com/godtributes)
-* Best of Bots
+* Compilations of Bots
     * [Best of Darius' Bots](https://twitter.com/dariusbots)
     * [Scott McNally](https://twitter.com/botally)
 
