@@ -31,7 +31,7 @@ Git Subtrees allow easily tracking and contributing to remote repositories.  The
 
     `git subtree pull --prefix $LOCAL_PATH $REMOTE_NAME $REMOTE_BRANCH`
 
-# track a subdirectory of a remote repository, squash commits
+# track a subdirectory of a remote repository, keep full history
 
 1. clone remote repository as a new project
 
@@ -57,4 +57,4 @@ Git Subtrees allow easily tracking and contributing to remote repositories.  The
 
     `git push --set-upstream $NEW_REMOTE_NAME $WORK_BRANCH:master`
 
-4. use that new repository as a subtree.
+4. use that new repository as a subtree in either project to commit changes to both repositories.  if you'd like the full history in your project, leave off the `--squash` during submodule commands.
