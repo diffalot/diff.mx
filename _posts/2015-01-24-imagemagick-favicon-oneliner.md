@@ -6,8 +6,7 @@ categories: [development]
 tags: [imagemagick, favicon]
 ---
 
-```
-convert $SOURCE_IMAGE  -bordercolor white -border 0 \
+```convert $SOURCE_IMAGE  -bordercolor white -border 0 \
       \( -clone 0 -resize 16x16 \) \
       \( -clone 0 -resize 32x32 \) \
       \( -clone 0 -resize 48x48 \) \

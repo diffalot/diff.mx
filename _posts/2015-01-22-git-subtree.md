@@ -27,9 +27,9 @@ Git Subtrees allow easily tracking and contributing to remote repositories.  The
 
 3. fetch and merge (pull) when the subtree remote has updates
 
-    `git fetch $REMOTE_NAME $REMOTE_BRANCH`
-
-    `git subtree pull --prefix $LOCAL_PATH $REMOTE_NAME $REMOTE_BRANCH`
+    ```git fetch $REMOTE_NAME $REMOTE_BRANCH
+    git subtree pull --prefix $LOCAL_PATH $REMOTE_NAME $REMOTE_BRANCH
+    ```
 
 # track a subdirectory of a remote repository, keep full history
 
@@ -39,22 +39,18 @@ Git Subtrees allow easily tracking and contributing to remote repositories.  The
 
 2. discard everything but the subdirectory wanted, this will make the wanted directory the project root with full working history.
 
-    `cd $CLONED_REPO`
-
-    `git checkout -b $WORK_BRANCH`
-
-    `git filter-branch --subdirectory-filter $WANTED_DIRECTORY HEAD -- --all`
-
-    `git reset --hard`
-
-    `git gc --aggressive`
-
-    `git prune`
+    ```cd $CLONED_REPO
+    git checkout -b $WORK_BRANCH
+    git filter-branch --subdirectory-filter $WANTED_DIRECTORY HEAD -- --all
+    git reset --hard
+    git gc --aggressive
+    git prune
+    ```
 
 3. setup new remote to contain project, and push to master branch at that location
 
-    `git remote add $NEW_REMOTE_NAME $NEW_REMOTE_URI`
-
-    `git push --set-upstream $NEW_REMOTE_NAME $WORK_BRANCH:master`
+    ```git remote add $NEW_REMOTE_NAME $NEW_REMOTE_URI
+    git push --set-upstream $NEW_REMOTE_NAME $WORK_BRANCH:master
+    ```
 
 4. use that new repository as a subtree in either project to commit changes to both repositories.  if you'd like the full history in your project, leave off the `--squash` during submodule commands.
