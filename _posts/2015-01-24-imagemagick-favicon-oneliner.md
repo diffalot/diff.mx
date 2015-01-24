@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Imagemagick Favicon One-Liner"
-date:   2015-01-22 12:00:00
+date:   2015-01-24 12:00:00
 categories: [development]
 tags: [imagemagick, favicon]
 ---
