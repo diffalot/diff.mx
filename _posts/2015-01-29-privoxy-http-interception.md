@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Privoxy HTTP Interception on an OpenWRT Router to Remove All Advertisements"
+title:  "Remove All Advertisements for OpenWRT wifi clients with Privoxy"
 date:   2015-01-29 12:00:00
 categories: [administration]
 tags: [openwrt, privoxy, adblock, do not track, advertising]
 ---
 
-[Privoxy]() is an add removing proxy that disallows your web browser from
+[Privoxy](http://www.privoxy.org/) is an add removing proxy that disallows your web browser from
 accessing content located on ad networks.  Normal setup involves changing your
 web browser's proxy settings to point to privoxy on port 8118, but it can be
 instaled on routers like OpenWRT to transparently block all advertising for all
