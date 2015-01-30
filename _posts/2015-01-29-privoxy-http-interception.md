@@ -9,7 +9,7 @@ tags: [openwrt, privoxy, adblock, do not track, advertising]
 [Privoxy](http://www.privoxy.org/) is an ad removing proxy that disallows your
 web browser from accessing content located on ad networks for both ad display
 and browser tracking.  Normal setup involves changing your web browser's proxy
-settings to point to privoxy on port 8118, but it can be instaled on routers
+settings to point to privoxy on port 8118, but it can be installed on routers
 like OpenWRT to transparently block all advertising for all clients connecting
 to the internet through that router.
 
