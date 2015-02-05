@@ -15,8 +15,6 @@ function terminal-picture {
 	WIDTH_HEIGHT=`identify $1 | awk '{ print $3 }' | sed -e 's/x/ /g'`
 	PIC_WIDTH=`echo $WIDTH_HEIGHT | awk '{ print $1 }'`
 	PIC_HEIGHT=`echo $WIDTH_HEIGHT | awk '{ print $2 }'`
-	MAX_WIDTH=`expr $COLUMNS / 2 - 2`
-	MAX_HEIGHT=`expr $LINES / 2 - 3`
 	PIC_RATIO=`expr $PIC_WIDTH / $PIC_HEIGHT`
 	TERM_RATIO=`expr $COLUMNS / $LINES`
 	if [ "$TERM_RATIO" -gt "$PIC_RATIO" ];
