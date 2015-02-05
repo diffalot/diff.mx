@@ -12,6 +12,18 @@ Here's a quick shell function to convert an image for display in the terminal.  
 ```# terminal-picture takes an image file as an argument and displays it at
 # terminal width with xterm-256-colors
 function terminal-picture {
-	convert $1 -resize `expr $COLUMNS / 2 - 2` /tmp/terminal-picture.png && img-cat /tmp/terminal-picture.png;
+	WIDTH_HEIGHT=`identify $1 | awk '{ print $3 }' | sed -e 's/x/ /g'`
+	PIC_WIDTH=`echo $WIDTH_HEIGHT | awk '{ print $1 }'`
+	PIC_HEIGHT=`echo $WIDTH_HEIGHT | awk '{ print $2 }'`
+	MAX_WIDTH=`expr $COLUMNS / 2 - 2`
+	MAX_HEIGHT=`expr $LINES / 2 - 3`
+	PIC_RATIO=`expr $PIC_WIDTH / $PIC_HEIGHT`
+	TERM_RATIO=`expr $COLUMNS / $LINES`
+	if [ "$TERM_RATIO" -gt "$PIC_RATIO" ];
+	then
+		convert $1 -resize x`expr $LINES - 1` /tmp/terminal-picture.png && img-cat /tmp/terminal-picture.png;
+	else
+		convert $1 -resize `expr $COLUMNS / 2 - 2` /tmp/terminal-picture.png && img-cat /tmp/terminal-picture.png;
+	fi
 }
 ```
