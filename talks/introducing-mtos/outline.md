@@ -9,11 +9,31 @@
 
 ---
 
-# For More Info
+# Internet Devolution
 
-* [MTOS Library](https://git.diff.mx/mtos/mtos)
-* [MTOS Reference Application](https://git.diff.mx/mtos/mtos)
-* [MTOS Library Documentation](http://docs.mtos.co)
+* The Internet Used to be Decentralized
+* Now Everything is Siloed
+
+----
+
+![ARPANET](images/arpanet2.gif)
+
+from Richard T. Griffiths' [History of the Internet](http://www.let.leidenuniv.nl/history/ivh/chap2.htm).
+
+----
+
+![Types of Networks](images/networktypes.png)
+
+illustration from _On Distributed Communication Networks_ by Paul Baran.
+
+----
+
+![Siloed Data](images/silos.png)
+
+
+----
+
+![P2P Network](images/p2p.png)
 
 ---
 
