@@ -8,8 +8,8 @@ tags: [MTOS, PGP, PKI, WebTorrent, Secure Scuttlebut, Radical Networks]
 
 # For More Info
 
-* [MTOS Library](https://git.diff.mx/mtos/mtos)
-* [MTOS Reference Application](https://git.diff.mx/mtos/mtos)
+* [MTOS Library](https://github.com/m-t-o-s)
+* [MTOS Reference Application](https://mtos.co)
 * [MTOS Library Documentation](http://docs.mtos.co)
 
 # How it Works
