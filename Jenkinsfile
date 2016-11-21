@@ -66,7 +66,7 @@ node('jenkins-minion') {
             case 'master':
                  gitlabCommitStatus("deploy") {
                      stage('deploy') {
-                          sh "kubectl set image deployment/diff-mx sees-earth=541790730179.dkr.ecr.us-east-1.amazonaws.com/diff-mx:${env.BUILD_TAG} --namespace=diffalot"
+                          sh "kubectl set image deployment/diff-mx diff-mx=541790730179.dkr.ecr.us-east-1.amazonaws.com/diff-mx:${env.BUILD_TAG} --namespace=diffalot"
                           sh 'kubectl rollout status deployment/diff-mx --namespace=diffalot'
                      }
                 }
