@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: diff-mx
+  namespace: diffalot
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        run: diff-mx
+    spec:
+      containers:
+      - name: diff-mx
+        image: 541790730179.dkr.ecr.us-east-1.amazonaws.com/diff-mx
+        ports:
+          - name: http
+            containerPort: 80
