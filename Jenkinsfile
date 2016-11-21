@@ -57,7 +57,7 @@ node('jenkins-minion') {
             stage('docker build') {
                 sh '$(aws ecr get-login --region=us-east-1)'
                 docker.withRegistry("https://541790730179.dkr.ecr.us-east-1.amazonaws.com") {
-                    docker.build("diff-ms:${env.BUILD_TAG}").push()
+                    docker.build("diff-mx:${env.BUILD_TAG}").push()
                 }
             }
         }
