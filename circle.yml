@@ -5,7 +5,6 @@ machine:
 
 dependencies:
   override:
-    - npm install -g now
     - bundle install
 
 compile:
@@ -20,4 +19,5 @@ deployment:
   production:
     branch: master
     commands:
-      - now --token $NOW_TOKEN --static _site --alias diff.mx
+      - npm install -g now
+      - now --token $NOW_TOKEN --docker --alias diff.mx
