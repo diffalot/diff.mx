@@ -2,8 +2,6 @@ machine:
   timezone: America/New_York
   node:
     version: 6
-  ruby:
-    version: 2.4
 
 dependencies:
   override:
