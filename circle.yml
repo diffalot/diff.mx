@@ -3,7 +3,7 @@ machine:
   node:
     version: 6
   ruby:
-    version: stable
+    version: 2.4
 
 dependencies:
   override:
