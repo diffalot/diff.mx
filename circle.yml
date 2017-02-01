@@ -12,6 +12,10 @@ compile:
   override:
     - bundle exec jekyll build
 
+test:
+  override:
+    - echo "no tests specified"
+
 deployment:
   production:
     branch: master
