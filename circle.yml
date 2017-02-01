@@ -1,0 +1,21 @@
+machine:
+  timezone: America/New_York
+  node:
+    version: 6
+  ruby:
+    version: 2.4
+
+dependencies:
+  override:
+    - npm install -g now
+    - bundle install
+
+compile:
+  override:
+    - bundle exec jekyll build
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - now --token $NOW_TOKEN --static _site --alias diff.mx
