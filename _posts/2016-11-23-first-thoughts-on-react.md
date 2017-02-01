@@ -18,12 +18,13 @@ you're not running into too many new problems, most of the problems you're
 hitting are problems that _many_ other people are hitting too.
 
 Here are the high points of what I needed to know about React, but didn't fully
-understand till i had someone more experienced help me understandVgq
+understand 'till I had someone who had already had the knowledge I was missing.
 
-1. every feature will have components, reducers, sagas, actions, constants, etc
+1. every feature will have components, reducers, sagas, actions, constants,
+   services, etc
 1. you'll have root level `sagaCombiner.js`, `reducerCombiner.js` to add the
    redux specific state controllers to your main entrypoint (e.g.
-`src/index.js`)
+   `src/index.js`)
 1. put each feature in a separate folder, this makes it easy to modularize
    components later and then share them among projects as npm modules
 1. `actions.js` is a set of functions that return the action objects so the
@@ -36,4 +37,4 @@ understand till i had someone more experienced help me understandVgq
 
 # things i'm not yet sure about
 5. export selector functions alongside the reducers
-6. should constants and actions be kept alongside teh reducer too? constants there make sense, but i bet actions should be in their own file
+6. should constants and actions be kept alongside the reducer too? constants there make sense, but i bet actions should be in their own file
