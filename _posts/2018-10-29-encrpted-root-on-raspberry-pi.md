@@ -6,40 +6,13 @@ categories: [embeddded systems]
 tags: [embedded systems, raspberry pi]
 ---
 
-# Background
-
-For a long time I have wanted to setup a Raspberry pi to use as a development
-machine with a eInk display for editing code outside at the beach while waiting
-for the waves to shift with the tide so I can maximize my surf time (it's not
-cheap for me to get all the way down to the beach) with some productivity while
-I'm breaking.  Also I just want to be able to sit in the sun on my patio and
-relax with some coding.  Maybe later I will be able to hook this whole system
-up with some solar panels and a satellite connection and take a leisurely trek
-across Iceland with breaks for productivity in beautiful places (I think I can
-handle an extra 2 kg of weight, particularly with more time spent resting at
-camp).
-
-Originally, I tried setting up a Kindle as the display, but rooting those
-things is increasingly difficult, particularly with my lack of experience and
-fear of soldering onto the serial debug ports of the device.  That setup was
-not a bit of a hack: a complicated network setup with wireless connection on a
-rooted Kindle's VNC client to a bridged access point on the Pi that is also a
-wireless client to my cell phone with TigerVnc running on the Pi. Wow, that was
-not a fun setup.
-
-But as of this date, there are two decent options for getting an eInk display
-that connects over HDMI so it leverages everything the Pi is good at, and
-doesn't require running access point and vnc daemons.  Of course, I have not
-bought either of [these][eInk android] [displays][eInk hdmi] (I have a simple
-usb powered, hdmi input touch screen that I will start out with while I wait
-for the hdmi in eInk displays to come down in price).
+For a long time I have wanted to setup a Raspberry Pi to use as a development
+machine with a eInk display for editing code outside, in broad daylight, at the beach...
 
 Another huge consideration for using a Raspberry Pi as a "daily driver" is that
 the security of having unencrypted root and boot partitions on an easily
 removed sd card is "less than acceptable" since anyone with physical access to
-the Pi can modify your os and filesystem, essentially, anyone with physical
-access to the device can root it quickly and install whatever kernel they want
-with whatever remote access toolkit they can devise.  Or if the sd card is
+the Pi can modify your os and filesystem.  Essentially, if the sd card is
 stolen, an attacker will have access to all files on it.
 
 I don't believe the Raspberry Pi is capable of having an encrypted boot
@@ -69,14 +42,13 @@ considered secure).***
 # Instructions
 
 *Compiled from the [arch linux arm install instructions] and the [arch linux
-arm cryptsetup instructions], but using the newer AArch64 distribution.*
+arm cryptsetup instructions]*
 
 ## Figure out the device name using `lsblk`
 
 Use `lsblk` to find the usb drive, and make sure you find the right device; for
 the following instructions we are using `/dev/sdX`, and I hope that is not an
-actual device on your system if you foolishly decide to copy/paste these
-instructions.
+actual device on your system.
 
 ## Format `/dev/sdX` with fdisk
 
@@ -202,6 +174,13 @@ pacman -S linux
 #### setup Pi `/boot/cmdline.txt` to use the encrypted device
 
 Add: `root=/dev/mapper/usb-drive cryptdevice=/dev/sda2:usb-drive rootfstype=ext4` to the command
+
+#### Setup `/etc/fstab` to point to the usb drive instead of the sd card
+
+```
+# <file system> <dir> <type> <options> <dump> <pass>
+/dev/sda1  /boot   vfat    defaults        0       0
+```
 
 ### Poweroff the chroot and unmount the SD card
 
