@@ -7,26 +7,29 @@ tags: [embedded systems, raspberry pi]
 ---
 
 For a long time I have wanted to setup a Raspberry Pi to use as a development
-machine with a eInk display for editing code outside, in broad daylight, at the beach...
+machine. The first attempts I made a few years ago were not successful using a
+Raspberry Pi B (the machine was barely able to run chromium, much less an `npm
+watch` command and a web inspector). But these days, a Raspberry Pi 3+ is
+serviceable as a daily use development machine.
 
 Another huge consideration for using a Raspberry Pi as a "daily driver" is that
-the security of having unencrypted root and boot partitions on an easily
-removed sd card is "less than acceptable" since anyone with physical access to
-the Pi can modify your os and filesystem.  Essentially, if the sd card is
-stolen, an attacker will have access to all files on it.
+the security of having unencrypted root and boot partitions on an easily removed
+sd card is "less than acceptable" since anyone with physical access to the Pi
+can modify your os and filesystem. Essentially, if the sd card is stolen, an
+attacker will have access to all files on it.
 
 I don't believe the Raspberry Pi is capable of having an encrypted boot
 partition or signed kernel at this point, which does not mitigate against evil
 maid attacks with kernel modifications, but it is possible to encrypt the root
-filesystem so that the system is encrypted at rest and if the sd card is lost
-or stolen, your data *should* be safe.
+filesystem so that the system is encrypted at rest and if the sd card is lost or
+stolen, your data *should* be safe.
 
 Another exciting feature of the Raspberry Pi 3's is that they allow [booting
 from
 usb](https://www.raspberrypi.org/documentation/hardware/raspberrypi/bootmodes/msd.md),
 so one simple way of mitigating the chances of an evil maid attack is to keep a
-usb drive on a keychain, so any attacker will need to get ahold of the usb
-drive to perform an evil maid attack.
+usb drive on a keychain, so any attacker will need to get ahold of the usb drive
+to perform an evil maid attack.
 
 ***Please note that the following instructions of encrypting a usb storage
 device will not protect from evil maid attacks. If the usb device leaves the
@@ -41,8 +44,10 @@ considered secure).***
 
 # Instructions
 
-*Compiled from the [arch linux arm install instructions] and the [arch linux
-arm cryptsetup instructions]*
+*Compiled from the [arch linux arm install instructions] and the [arch linux arm
+cryptsetup instructions]*
+
+To begin with, the usb drive should be prepared on a running linux installation.
 
 ## Figure out the device name using `lsblk`
 
@@ -60,9 +65,12 @@ At the fdisk prompt, delete old partitions and create a new one:
 
 1. Type `o`. This will clear out any partitions on the drive.
 1. Type `p` to list partitions. There should be no partitions left.
-1. Type `n`, then `p` for primary, `1` for the first partition on the drive, press `ENTER` to accept the default first sector, then type `+512M` for the last sector.
+1. Type `n`, then `p` for primary, `1` for the first partition on the drive,
+   press `ENTER` to accept the default first sector, then type `+512M` for the
+   last sector.
 1. Type `t`, then `c` to set the first partition to type W95 FAT32 (LBA).
-1. Type `n`, then `p` for primary, `2` for the second partition on the drive, and then press `ENTER` twice to accept the default first and last sector.
+1. Type `n`, then `p` for primary, `2` for the second partition on the drive,
+   and then press `ENTER` twice to accept the default first and last sector.
 1. Write the partition table and exit by typing `w.
 
 
@@ -120,6 +128,8 @@ the operation was successful._
 
 ## Chroot into `/mnt` with `qemu`
 
+***Note: the following steps should be done in the qemu chroot!***
+
 ***This is a badass way to manage a Pi system; you can just insert the usb into
 a host system and boot into it as if you're physically using a Pi***
 
@@ -129,8 +139,6 @@ systemd-nspawn --bind /usr/bin/qemu-arm-static -b -D /mnt
 
 # exit when finished with 'poweroff'
 ```
-
-***Note: the following steps should be done in the qemu chroot!***
 
 ### Administer system
 
@@ -173,7 +181,8 @@ pacman -S linux
 
 #### setup Pi `/boot/cmdline.txt` to use the encrypted device
 
-Add: `root=/dev/mapper/usb-drive cryptdevice=/dev/sda2:usb-drive rootfstype=ext4` to the command
+Add: `root=/dev/mapper/usb-drive cryptdevice=/dev/sda2:usb-drive
+rootfstype=ext4` to the command
 
 #### Setup `/etc/fstab` to point to the usb drive instead of the sd card
 
@@ -191,10 +200,10 @@ umount /mnt
 sync
 ```
 
-
-
-
-
-
 [arch linux arm install instructions]: https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-3
 [arch linux arm cryptsetup instructions]: https://wiki.polaire.nl/doku.php?id=archlinux-raspberry-encrypted#raspberry_pi_3_-_arch_linux_encrypted_root_fs
+
+## Boot the Raspberry Pi
+
+Remove the sd card from the raspberry pi, plug in the usb drive and a usb
+keyboard, and power it on.
