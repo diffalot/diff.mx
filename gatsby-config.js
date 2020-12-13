@@ -11,10 +11,51 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        defaultLayouts: { default: path.resolve('./src/components/layout.js') }
+        defaultLayouts: {
+          default: path.resolve('./src/components/layout.js'),
+          posts: path.resolve('./src/components/layout.js')
+        },
+        extensions: [".mdx", ".md"],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          `gatsby-remark-prismjs`,
+          //`gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              className: `header-anchor`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-external-links`,
+            options: {
+              target: null,
+              rel: `external`,
+            },
+          },
+        ],
       }
     },
     'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `static`,
+        path: `${__dirname}/src/static`
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -35,6 +76,12 @@ module.exports = {
         name: `posts`,
         path: `${__dirname}/src/posts`
       }
+    },
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/src/posts`,
+      },
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',

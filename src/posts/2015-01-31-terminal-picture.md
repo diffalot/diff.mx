@@ -6,11 +6,20 @@ categories: [console]
 tags: [xterm, console, imagemagick, node, shell script]
 ---
 
+```javascript
+let var = 'value';
+
+function whatever() {
+ return null
+}
+```
+
 ![terminal picture](/images/terminal-picture.png)
 
 Here's a quick shell function to convert an image for display in the terminal. It requires imagemagick, and [node `img-cat`](https://www.npmjs.com/package/img-cat).
 
-```# terminal-picture takes an image file as an argument and displays it at
+```bash
+# terminal-picture takes an image file as an argument and displays it at
 # terminal width with xterm-256-colors
 function terminal-picture {
 	WIDTH_HEIGHT=`identify $1 | awk '{ print $3 }' | sed -e 's/x/ /g'`

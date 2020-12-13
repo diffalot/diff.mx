@@ -3,7 +3,6 @@ name: Gatsby Publish
 on:
   push:
     branches:
-      - switch-to-gatsby
       - master
 
 jobs:

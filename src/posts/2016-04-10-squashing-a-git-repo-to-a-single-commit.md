@@ -8,12 +8,18 @@ tags: [git, development, git rebase]
 
 1. Rebase the repository to 2 commits
 
-   git rebase -i $CHECKSUM_OF_FIRST_COMMIT
+```shell
+git rebase -i $CHECKSUM_OF_FIRST_COMMIT
+```
 
 2. Soft Reset the last commit
 
-   git reset --soft "HEAD^"
+```shell
+git reset --soft "HEAD^"
+```
 
 3. Use the softly reset staging area as an `--amend` commit
 
-   git commit --amend -m "Squashed repo to a single commit"
+```shell
+git commit --amend -m "Squashed repo to a single commit"
+```
