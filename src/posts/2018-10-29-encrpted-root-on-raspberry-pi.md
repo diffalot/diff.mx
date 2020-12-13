@@ -1,15 +1,14 @@
 ---
 layout: post
-title:  "Encrypted Root Partition on Raspberry Pi 3+"
-date:   2018-10-29 12:00:00
+title: 'Encrypted Root Partition on Raspberry Pi 3+'
+date: 2018-10-29 12:00:00
 categories: [embeddded systems]
 tags: [embedded systems, raspberry pi]
 ---
 
 For a long time I have wanted to setup a Raspberry Pi to use as a development
 machine. The first attempts I made a few years ago were not successful using a
-Raspberry Pi B (the machine was barely able to run chromium, much less an `npm
-watch` command and a web inspector). But these days, a Raspberry Pi 3+ is
+Raspberry Pi B (the machine was barely able to run chromium, much less an `npm watch` command and a web inspector). But these days, a Raspberry Pi 3+ is
 serviceable as a daily use development machine.
 
 Another huge consideration for using a Raspberry Pi as a "daily driver" is that
@@ -22,7 +21,7 @@ I don't believe the Raspberry Pi is capable of having an encrypted boot
 partition or signed kernel at this point, which does not mitigate against evil
 maid attacks with kernel modifications, but it is possible to encrypt the root
 filesystem so that the system is encrypted at rest and if the sd card is lost or
-stolen, your data *should* be safe.
+stolen, your data _should_ be safe.
 
 Another exciting feature of the Raspberry Pi 3's is that they allow [booting
 from
@@ -31,21 +30,19 @@ so one simple way of mitigating the chances of an evil maid attack is to keep a
 usb drive on a keychain, so any attacker will need to get ahold of the usb drive
 to perform an evil maid attack.
 
-***Please note that the following instructions of encrypting a usb storage
+**_Please note that the following instructions of encrypting a usb storage
 device will not protect from evil maid attacks. If the usb device leaves the
 posession of the owner, it should be considered tainted, and should never be
 used to boot again (though encrypted data in the root partition may still be
-considered secure).***
+considered secure)._**
 
-
-[eInk android]: https://teleread.org/2018/03/25/review-onyx-boox-max-2-13-3-e-ink-android-tablet/
-[eInk hdmi]: https://www.indiegogo.com/projects/paperlike-3-a-smart-e-ink-monitor-save-your-eyes#/
-
+[eink android]: https://teleread.org/2018/03/25/review-onyx-boox-max-2-13-3-e-ink-android-tablet/
+[eink hdmi]: https://www.indiegogo.com/projects/paperlike-3-a-smart-e-ink-monitor-save-your-eyes#/
 
 # Instructions
 
-*Compiled from the [arch linux arm install instructions] and the [arch linux arm
-cryptsetup instructions]*
+_Compiled from the [arch linux arm install instructions] and the [arch linux arm
+cryptsetup instructions]_
 
 To begin with, the usb drive should be prepared on a running linux installation.
 
@@ -73,13 +70,11 @@ At the fdisk prompt, delete old partitions and create a new one:
    and then press `ENTER` twice to accept the default first and last sector.
 1. Write the partition table and exit by typing `w.
 
-
 ## Create the FAT filesystem for the boot volume:
 
 ```
 mkfs.vfat /dev/sdX1
 ```
-
 
 ## Create the encrypted ext4 filesystem for the root volume
 
@@ -91,8 +86,8 @@ WARNING!
 This will overwrite data on /dev/sdX2 irrevocably.
 
 Are you sure? (Type uppercase yes): YES
-Enter passphrase: 
-Verify passphrase: 
+Enter passphrase:
+Verify passphrase:
 ```
 
 ## Open a decrypted block device
@@ -128,10 +123,10 @@ the operation was successful._
 
 ## Chroot into `/mnt` with `qemu`
 
-***Note: the following steps should be done in the qemu chroot!***
+**_Note: the following steps should be done in the qemu chroot!_**
 
-***This is a badass way to manage a Pi system; you can just insert the usb into
-a host system and boot into it as if you're physically using a Pi***
+**_This is a badass way to manage a Pi system; you can just insert the usb into
+a host system and boot into it as if you're physically using a Pi_**
 
 ```
 cd /mnt
@@ -163,8 +158,6 @@ pacman -Suy
 pacman -S lvm2 cryptsetup
 ```
 
-
-
 #### Setup kernel for mkinitcpio to use encrypted lvm2
 
 ##### Add `lvm2` and `encrypt` to `HOOKS` in `/etc/mkinitcpio.conf`
@@ -181,8 +174,7 @@ pacman -S linux
 
 #### setup Pi `/boot/cmdline.txt` to use the encrypted device
 
-Add: `root=/dev/mapper/usb-drive cryptdevice=/dev/sda2:usb-drive
-rootfstype=ext4` to the command
+Add: `root=/dev/mapper/usb-drive cryptdevice=/dev/sda2:usb-drive rootfstype=ext4` to the command
 
 #### Setup `/etc/fstab` to point to the usb drive instead of the sd card
 

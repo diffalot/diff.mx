@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  "Estimated Cost of Prototype Little Library Checkout System"
-date:   2015-02-01 12:00:00
+title: 'Estimated Cost of Prototype Little Library Checkout System'
+date: 2015-02-01 12:00:00
 categories: [hardware, embedded systems]
 tags: [littlelibrary, arduino, nfc, xbee, mesh network]
 ---
 
 A friend who works in outreach for a municipal library system asked me if I
 knew of any methods for checking out and checking in books from their depository
-libraries.  I really didn't know what a depository library was, but once it was
+libraries. I really didn't know what a depository library was, but once it was
 explained that it was an unstaffed library where patrons remove and deposit
-books without *officially* checking them out, I remembered reading about
+books without _officially_ checking them out, I remembered reading about
 [Little Free Libraries](http://littlefreelibrary.org/), and then spent an
 afternoon piecing together the components I'd buy to equip these libraries with
 NFC readers to catalog checkin and checkout.
 
-NFC  is becoming standard on cell phones (it's been on android for a while, and
+NFC is becoming standard on cell phones (it's been on android for a while, and
 I believe it's been included on newer iPhones), so it makes an ideal system for
 developing a cataloging system for Little Libraries because making books
 scanable by both the library catalog device and a patron's cell phone opens up
@@ -34,26 +34,26 @@ The most basic setup will require a microcontroller (cpu), an NFC reader, a
 clock module (if the cpu doesn't include one), a micro sd card reader, and a
 power supply, also sticker rfid tags to go in the books.
 
-* stickers:
-    * [$1.50 each](http://www.seeedstudio.com/depot/1356MHz-RFID-book-tag-p-1067.html)
+- stickers:
+  - [$1.50 each](http://www.seeedstudio.com/depot/1356MHz-RFID-book-tag-p-1067.html)
 
 # Most Basic System:
 
 **$60.65-$85.65**
 
-* microcontroller:
+- microcontroller:
   [$39.00](http://www.seeedstudio.com/depot/Seeeduino-Stalker-v3-p-1882.html)
-(includes micro sd card reader, real time clock, and charge regulator)
-* nfc reader: 
-    * [$21.50](http://www.seeedstudio.com/depot/Grove-NFC-p-1804.html)
-* power supply:
-    * battery: [~$10 to
-      ~$25](http://www.seeedstudio.com/depot/Battery-c-1_3/?terms_id=209)
-    * solar panel:  [~$5 to
-      ~$15](http://www.seeedstudio.com/depot/Solar-Panel-c-1_118/?ref=side)
+  (includes micro sd card reader, real time clock, and charge regulator)
+- nfc reader:
+  - [$21.50](http://www.seeedstudio.com/depot/Grove-NFC-p-1804.html)
+- power supply:
+  - battery: [~$10 to
+    ~$25](http://www.seeedstudio.com/depot/Battery-c-1_3/?terms_id=209)
+  - solar panel: [~$5 to
+    ~$15](http://www.seeedstudio.com/depot/Solar-Panel-c-1_118/?ref=side)
 
 This most basic system only works by going to each location
-to retrieve checkout/checkin data.  An app developed for an NFC enabled cell
+to retrieve checkout/checkin data. An app developed for an NFC enabled cell
 phone can read data from the catalog and also program the rfid stickers (use a
 barcode scanner or isbn entry to get book info -> program sticker by holding it
 to phone).
@@ -62,26 +62,26 @@ Aside from going to each location to check inventory (in the case of a large
 public library system administering many little libraries), another option is
 to use the cell network to track inventory, which adds a monthly cell phone
 bill for each location, but only 2G (edge) would be required, so a monthly plan
-for [~$12](https://www.sparkfun.com/products/13186).  To avoid monthly fees,
+for [~$12](https://www.sparkfun.com/products/13186). To avoid monthly fees,
 another option is to use local-to-installation area wireless network, or to
 set up a low speed mesh network with nodes as far apart as 28 miles (closer
 would be better).
 
-# Networked System 
+# Networked System
 
 Base of a networked system is the same as the most basic system, it just
 needs to have a networking card added:
 
-* cell network card: **$54.50**
-    * card: [$48.00](http://www.seeedstudio.com/depot/GPRSbee-rev-4-UFL-p-1777.html?cPath=19_20)
-    * antenna: [$6.50](http://www.seeedstudio.com/depot/GSM9001800-antenna-with-interface-cable-p-555.html?cPath=55_59)
-* wifi network card: [**$39.90**](http://www.seeedstudio.com/depot/Wifi-Bee-v20-p-1637.html)
-* xbee 6-mile mesh network card: **$62.90**
-    * card: [$54.95](https://www.sparkfun.com/products/9099)
-    * antenna: [$7.95](https://www.sparkfun.com/products/9143)
-* xbee 28-mile mesh network card: **$74.90**
-    * card: [$66.95](https://www.sparkfun.com/products/11634)
-    * antenna: [$7.95](https://www.sparkfun.com/products/9143)
+- cell network card: **$54.50**
+  - card: [$48.00](http://www.seeedstudio.com/depot/GPRSbee-rev-4-UFL-p-1777.html?cPath=19_20)
+  - antenna: [$6.50](http://www.seeedstudio.com/depot/GSM9001800-antenna-with-interface-cable-p-555.html?cPath=55_59)
+- wifi network card: [**$39.90**](http://www.seeedstudio.com/depot/Wifi-Bee-v20-p-1637.html)
+- xbee 6-mile mesh network card: **$62.90**
+  - card: [$54.95](https://www.sparkfun.com/products/9099)
+  - antenna: [$7.95](https://www.sparkfun.com/products/9143)
+- xbee 28-mile mesh network card: **$74.90**
+  - card: [$66.95](https://www.sparkfun.com/products/11634)
+  - antenna: [$7.95](https://www.sparkfun.com/products/9143)
 
 ## Networked System Totals:
 

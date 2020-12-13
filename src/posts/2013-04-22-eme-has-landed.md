@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "EME Has Landed, Run for Your Life"
-date:   2013-04-22 12:00:00
+title: 'EME Has Landed, Run for Your Life'
+date: 2013-04-22 12:00:00
 categories: [mtos]
 tags: [eme, html5, webrtc]
 ---
 
-> UPDATE:  i have been confused by multiple uses of CDM { Content Delivery
-> Manager | Content Decryption Module } on w3c lists.  please substitute “CDM”
+> UPDATE: i have been confused by multiple uses of CDM { Content Delivery
+> Manager | Content Decryption Module } on w3c lists. please substitute “CDM”
 > with "DRM server" in the notes below.
 
 Here are a few quick notes from yesterday's lightning talks at #fcx2013:
