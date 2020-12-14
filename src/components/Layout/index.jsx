@@ -6,18 +6,20 @@ import Header from './header'
 import './index.css'
 import 'prismjs/themes/prism-twilight.css'
 
+const query = graphql`
+  query SiteTitleQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
+
 const Layout = ({ children }) => (
   <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={(data) => (
+    query={query}
+    render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
