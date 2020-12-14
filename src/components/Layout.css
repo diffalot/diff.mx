@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
 h1 {
   @apply text-xl p-3;
 }
@@ -13,6 +14,7 @@ h5,
 h6 {
   @apply font-bold;
 }
+*/
 
 .fullWidthContainer {
   @apply sm:container mx-auto p-4;

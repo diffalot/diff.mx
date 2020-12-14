@@ -39,10 +39,10 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "build-and-serve": "gatsby build && npx http-server -o --port 9000 ./public/",
     "develop": "gatsby develop",
+    "build-and-serve": "gatsby build && npx http-server -o --port 9000 ./public/",
     "clean": "gatsby clean",
+    "build": "gatsby build",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.jsx\"",
     "test": "echo \"Error: no test specified\" && exit 1"
