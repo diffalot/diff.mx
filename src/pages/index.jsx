@@ -5,10 +5,11 @@ import Layout from '../components/Layout'
 import './index.css'
 
 export default function MyFiles({ data: { allMdx } }) {
+  console.log({allMdx})
   return (
     <Layout>
       {allMdx.edges
-        .sort(({ node }) => -node.frontmatter.date)
+        .sort(({ node: a }, { node: b }) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
         .map(({ node }, index) => (
           <div className="postRow" key={index}>
             <h2 className="postTitle">
@@ -20,6 +21,7 @@ export default function MyFiles({ data: { allMdx } }) {
     </Layout>
   )
 }
+
 export const query = graphql`
   query {
     allMdx {

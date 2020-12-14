@@ -3,6 +3,7 @@ name: Gatsby Publish
 on:
   push:
     branches:
+      - tailwind-postcss
       - master
 
 jobs:
