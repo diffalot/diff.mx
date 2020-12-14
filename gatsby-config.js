@@ -9,11 +9,11 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-mdx`,
+      resolve: 'gatsby-plugin-mdx',
       options: {
         defaultLayouts: {
-          default: path.resolve('./src/components/Layout/index.jsx'),
-          posts: path.resolve('./src/components/Layout/index.jsx')
+          default: path.resolve('./src/components/Layout.jsx'),
+          posts: path.resolve('./src/components/Layout.jsx')
         },
         extensions: [".mdx", ".md"],
         gatsbyRemarkPlugins: [

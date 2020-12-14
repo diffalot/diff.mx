@@ -2,8 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
-import './index.css'
+import Header from './Header'
+
+import 'prismjs/themes/prism-twilight.css'
+import './Layout.css'
 
 const query = graphql`
   query SiteTitleQuery {
