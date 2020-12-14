@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
-import './layout.css'
+import './index.css'
 import 'prismjs/themes/prism-twilight.css'
 
 const Layout = ({ children }) => (
