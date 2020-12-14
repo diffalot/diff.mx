@@ -100,6 +100,8 @@ module.exports = {
     'gatsby-plugin-postcss',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    // todo: Give this a try and see how it does with offline mode ???
+    // 'gatsby-plugin-no-javascript'
   ]
 }
