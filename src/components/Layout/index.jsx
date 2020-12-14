@@ -4,7 +4,6 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import './index.css'
-import 'prismjs/themes/prism-twilight.css'
 
 const query = graphql`
   query SiteTitleQuery {
