@@ -4,8 +4,9 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './Header'
 
-import 'prismjs/themes/prism-twilight.css'
 import './Layout.css'
+import './gatsby.css'
+import 'prismjs/themes/prism-twilight.css'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -15,7 +16,9 @@ const Layout = ({ children }) => (
       return (
         <>
           <Header siteTitle={data.site.siteMetadata.title} />
-          <div className="fullWidthContainer md:text-large">{children}</div>
+          <div className="sm:container sm:text-large xl:text-2xl mx-auto p-4">
+            {children}
+          </div>
         </>
       )
     }}

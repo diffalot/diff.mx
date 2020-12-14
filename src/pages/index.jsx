@@ -2,8 +2,6 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
-import './index.css'
-
 export default function MyFiles({ data: { allMdx } }) {
   console.log({ allMdx })
   return (
