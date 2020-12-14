@@ -1,15 +1,18 @@
 module.exports = {
-  purge: [
-    './src/**/*.js',
-    './src/**/*.jsx',
-    './src/**/*.mdx',
-  ],
+  purge: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.mdx'],
   darkMode: 'media', // or 'false' or 'class'
   theme: {
-    extend: {},
+    screens: {
+      sm: '480px',
+      md: '640px',
+      lg: '768px',
+      xl: '1024px',
+      '2xl': '1024px'
+    },
+    extend: {}
   },
   variants: {
-    extend: {},
+    extend: {}
   },
-  plugins: [],
+  plugins: []
 }

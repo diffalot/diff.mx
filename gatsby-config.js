@@ -15,19 +15,19 @@ module.exports = {
           default: path.resolve('./src/components/Layout.jsx'),
           posts: path.resolve('./src/components/Layout.jsx')
         },
-        extensions: [".mdx", ".md"],
+        extensions: ['.mdx', '.md'],
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
-            },
+              maxWidth: 590
+            }
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
+              wrapperStyle: `margin-bottom: 1.0725rem`
+            }
           },
           `gatsby-remark-prismjs`,
           //`gatsby-remark-copy-linked-files`,
@@ -35,17 +35,17 @@ module.exports = {
           {
             resolve: `gatsby-remark-autolink-headers`,
             options: {
-              className: `header-anchor`,
-            },
+              className: `header-anchor`
+            }
           },
           {
             resolve: `gatsby-remark-external-links`,
             options: {
               target: null,
-              rel: `external`,
-            },
-          },
-        ],
+              rel: `external`
+            }
+          }
+        ]
       }
     },
     'gatsby-plugin-react-helmet',
@@ -78,10 +78,10 @@ module.exports = {
       }
     },
     {
-      resolve: "gatsby-plugin-page-creator",
+      resolve: 'gatsby-plugin-page-creator',
       options: {
-        path: `${__dirname}/src/posts`,
-      },
+        path: `${__dirname}/src/posts`
+      }
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
@@ -100,7 +100,7 @@ module.exports = {
     'gatsby-plugin-postcss',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    'gatsby-plugin-offline',
+    'gatsby-plugin-offline'
     // todo: Give this a try and see how it does with offline mode ???
     // 'gatsby-plugin-no-javascript'
   ]

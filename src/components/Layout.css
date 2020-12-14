@@ -2,3 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+h1 {
+  @apply text-xl p-3;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+
+.fullWidthContainer {
+  @apply sm:container mx-auto p-4;
+}
+
+.fullWidthContainer p {
+  @apply p-2;
+}

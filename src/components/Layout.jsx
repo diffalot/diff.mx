@@ -7,39 +7,33 @@ import Header from './Header'
 import 'prismjs/themes/prism-twilight.css'
 import './Layout.css'
 
-const query = graphql`
+const Layout = ({ children }) => (
+  <StaticQuery
+    query={siteTitleQuery}
+    render={data => {
+      console.log({ data })
+      return (
+        <>
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <div className="fullWidthContainer md:text-large">{children}</div>
+        </>
+      )
+    }}
+  />
+)
+export default Layout
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired
+}
+
+export const siteTitleQuery = graphql`
   query SiteTitleQuery {
     site {
+      id
       siteMetadata {
         title
       }
     }
   }
 `
-
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={query}
-    render={data => (
-      <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0
-          }}
-        >
-          {children}
-        </div>
-      </>
-    )}
-  />
-)
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired
-}
-
-export default Layout

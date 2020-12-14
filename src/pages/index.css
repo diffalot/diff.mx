@@ -1,6 +1,3 @@
-.postRow {
-}
-
 .postTitle {
-    @apply text-2xl
+  @apply text-2xl;
 }
