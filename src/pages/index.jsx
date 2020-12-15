@@ -12,8 +12,8 @@ export default function MyFiles({ data: { allMdx } }) {
             new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
         )
         .map(({ node }, index) => (
-          <div className="postRow" key={index}>
-            <h2 className="postTitle">
+          <div key={index}>
+            <h2>
               <a href={node.slug}>{node.frontmatter.title}</a>
             </h2>
             <p>{node.excerpt}</p>

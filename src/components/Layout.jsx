@@ -16,7 +16,7 @@ const Layout = ({ children }) => (
       return (
         <>
           <Header siteTitle={data.site.siteMetadata.title} />
-          <div className="sm:container sm:text-large xl:text-2xl mx-auto p-4">
+          <div className="sm:container mx-auto p-4 sm:text-large xl:text-2xl">
             {children}
           </div>
         </>

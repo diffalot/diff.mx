@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 const Header = ({ siteTitle }) => (
-  <div className="bg-green-300 p-4">
-    <nav className="sm:container mx-auto">
+  <div className="bg-green-300">
+    <nav className="sm:container mx-auto p-4">
       <h1 className="inline text-2xl font-black">
         <Link to="/">{siteTitle}</Link>
       </h1>
