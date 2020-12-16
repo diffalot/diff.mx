@@ -11,33 +11,46 @@ export default function MyFiles({ data: { allMdx } }) {
           ({ node: a }, { node: b }) =>
             new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
         )
-        .map(({ node }, index) => (
-          <div key={index}>
-            <h2>
-              <a href={node.slug}>{node.frontmatter.title}</a>
-            </h2>
-            <p>{node.excerpt}</p>
-          </div>
-        ))}
+        .map(({ node }) => {
+          console.log(node)
+          return (
+            <div key={node.id}>
+              <h2>
+                <a href={node.fields.slug}>{node.frontmatter.title}</a>
+              </h2>
+              <p>{node.excerpt}</p>
+            </div>
+          )
+        })}
     </Layout>
   )
 }
 
 export const query = graphql`
   query {
-    allMdx {
+    allMdx(filter: { fields: { source: { eq: "posts" } } }) {
       edges {
         node {
-          slug
+          id
           excerpt
+          fields {
+            slug
+            source
+          }
           frontmatter {
-            tags
-            title
             date
-            categories
-            layout
+            title
+          }
+          internal {
+            content
+            description
+            ignoreType
+            mediaType
           }
         }
+      }
+      nodes {
+        id
       }
     }
   }
