@@ -24,6 +24,8 @@
     "gatsby-remark-smartypants": "^2.6.0",
     "gatsby-source-filesystem": "^2.1.8",
     "gatsby-transformer-sharp": "^2.2.5",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
     "postcss": "^8.2.1",
     "postcss-import": "^13.0.0",
     "postcss-preset-env": "^6.7.0",
