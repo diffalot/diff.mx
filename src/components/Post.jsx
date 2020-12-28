@@ -5,15 +5,18 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 import Layout from './Layout'
 
-const shortcodes = {} // Provide common components here
+// Provide common components here
+import shortcodes from './mdx-shortcodes'
 
 export default function PageTemplate({ data: { mdx } }) {
   return (
     <Layout>
-      <h1>{mdx.frontmatter.title}</h1>
-      <MDXProvider components={shortcodes}>
-        <MDXRenderer>{mdx.body}</MDXRenderer>
-      </MDXProvider>
+      <article>
+        <h1>{mdx.frontmatter.title}</h1>
+        <MDXProvider components={shortcodes}>
+          <MDXRenderer>{mdx.body}</MDXRenderer>
+        </MDXProvider>
+      </article>
     </Layout>
   )
 }
