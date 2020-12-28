@@ -16,6 +16,7 @@ module.exports = {
           posts: path.resolve('./src/components/Layout.jsx')
         },
         extensions: ['.mdx', '.md'],
+        remarkPlugins: [require(`remark-emoji`)],
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
