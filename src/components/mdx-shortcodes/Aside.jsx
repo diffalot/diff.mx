@@ -5,6 +5,11 @@ import { MDXProvider } from '@mdx-js/react'
 // Provide common components here
 import shortcodes from './'
 
+/*
+ * The Aside is not fully rendered markdown since it will be passed in during
+ * Post.jsx creation. for this reason it receives MDX renderable children which
+ * we pass into the MDXProvider
+ */
 const Aside = ({ children }) => {
   return (
     <aside className="float-right w-2/5 m-2 p-2 text-xs bg-green-100">
@@ -14,11 +19,7 @@ const Aside = ({ children }) => {
 }
 
 Aside.propTypes = {
-  markdown: PropTypes.string
-}
-
-Aside.defaultProps = {
-  markdown: ''
+  children: PropTypes.element
 }
 
 export default Aside
