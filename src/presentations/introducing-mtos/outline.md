@@ -2,7 +2,7 @@
 
 ##### surveillance resistant peer to peer social networking
 
-#### [Andrew Davis](https://diff.mx)
+#### [Alice Davis](https://diff.mx)
 
 #### [@diffalot](https://twitter.com/diffalot)
 
@@ -100,6 +100,6 @@ illustration from _On Distributed Communication Networks_ by Paul Baran.
 
 #### <br />
 
-#### [andrew@diff.mx](https://diff.mx)
+#### [alice@diff.mx](https://diff.mx)
 
 #### [@diffalot](https://twitter.com/diffalot)

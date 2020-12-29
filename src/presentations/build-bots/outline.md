@@ -2,7 +2,7 @@
 
 ##### or, the merits of playing with emergent intelligences and the human tendancy to anthropomorphise everything
 
-#### [Andrew Davis](https://diff.mx)
+#### [Alice Davis](https://diff.mx)
 
 #### [@diffalot](https://twitter.com/diffalot)
 
@@ -182,7 +182,7 @@ var bot = mumTwit.create({
 
 var stream = bot.stream('user')
 
-stream.on('tweet', function (tweet) {
+stream.on('tweet', function(tweet) {
   console.log(tweet.text)
 })
 ```
@@ -213,7 +213,7 @@ var db = version(SubLevel(level('./data', { valueEncoding: 'json' })))
 
 var tweets = db.sublevel('tweets')
 
-stream.on('tweet', function (tweet) {
+stream.on('tweet', function(tweet) {
   tweets.put(tweet.id, tweet)
 })
 ```
@@ -246,6 +246,6 @@ stream.on('tweet', function (tweet) {
 
 #### <br />
 
-#### [andrew@diff.mx](https://diff.mx)
+#### [alice@diff.mx](https://diff.mx)
 
 #### [@diffalot](https://twitter.com/diffalot)
