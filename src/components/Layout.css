@@ -2,18 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  padding: env(safe-area-inset);
-}
-
-body {
-  position: relative;
-}
-
 html,
 body {
-  height: 100vh;
-  width: 100vw;
   overflow-x: hidden;
 }
 
