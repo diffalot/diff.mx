@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { MDXProvider } from '@mdx-js/react'
 
 // Provide common components here
@@ -16,10 +15,6 @@ const Aside = ({ children }) => {
       <MDXProvider components={shortcodes}>{children}</MDXProvider>
     </aside>
   )
-}
-
-Aside.propTypes = {
-  children: PropTypes.element
 }
 
 export default Aside

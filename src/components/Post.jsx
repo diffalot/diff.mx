@@ -11,8 +11,8 @@ import shortcodes from './mdx-shortcodes'
 export default function PageTemplate({ data: { mdx } }) {
   return (
     <Layout>
-      <article class="font-serif prose prose-xl p-4">
-        <p class="font-sans text-6xl font-black py-4">
+      <article className="font-serif prose prose-xl p-4">
+        <p className="font-sans text-6xl font-black text-black py-4">
           {mdx.frontmatter.title}
         </p>
         <MDXProvider components={shortcodes}>

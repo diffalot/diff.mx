@@ -11,7 +11,6 @@ const Layout = ({ children }) => (
   <StaticQuery
     query={siteTitleQuery}
     render={data => {
-      console.log({ data })
       return (
         <>
           <Header siteTitle={data.site.siteMetadata.title} />
