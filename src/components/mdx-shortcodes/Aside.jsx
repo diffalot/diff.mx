@@ -12,7 +12,7 @@ import shortcodes from './'
  */
 const Aside = ({ children }) => {
   return (
-    <aside className="float-right w-2/5 m-2 p-2 text-xs bg-green-100">
+    <aside className="float-right w-2/5 m-2 p-2 text-xs text-sans bg-green-100 dark:bg-indigo-500 dark:text-gray-100">
       <MDXProvider components={shortcodes}>{children}</MDXProvider>
     </aside>
   )

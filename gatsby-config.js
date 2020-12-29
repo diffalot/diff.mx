@@ -45,6 +45,14 @@ module.exports = {
               target: null,
               rel: `external`
             }
+          },
+          {
+            resolve: `gatsby-remark-classes`,
+            options: {
+              classMap: {
+                heading: 'font-sans font-black'
+              }
+            }
           }
         ]
       }
