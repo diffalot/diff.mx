@@ -17,9 +17,7 @@ export default function PageTemplate({ data: { mdx } }) {
         <p className="font-sans text-6xl font-black text-black py-4">
           {mdx.frontmatter.title}
         </p>
-        <MDXProvider components={shortcodes}>
-          <MDXRenderer>{mdx.body}</MDXRenderer>
-        </MDXProvider>
+        <MDXRenderer>{mdx.body}</MDXRenderer>
       </article>
     </Layout>
   )
