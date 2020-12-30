@@ -1,10 +1,13 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
 export default function MyFiles({ data: { allMdx } }) {
   return (
     <Layout>
+      <SEO title="" />
       <div className="p-4 prose-xl">
         {allMdx.edges
           .sort(
