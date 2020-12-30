@@ -1,0 +1,17 @@
+.cv {
+  font-family: 'Latin Modern Roman', serif;
+  counter-reset: theorem;
+  counter-reset: definition;
+}
+
+.cv .font-sans {
+  font-family: 'Latin Modern Roman', serif;
+}
+
+.cv .font-black {
+  font-weight: normal;
+}
+
+.cv a.header-anchor.before {
+  display: none !important;
+}
