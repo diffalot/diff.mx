@@ -13,7 +13,7 @@ module.exports = {
       options: {
         defaultLayouts: {
           default: path.resolve('./src/components/Layout.jsx'),
-          posts: path.resolve('./src/components/Layout.jsx')
+          posts: path.resolve('./src/components/Post.jsx')
         },
         extensions: ['.mdx', '.md'],
         remarkPlugins: [require(`remark-emoji`)],
