@@ -1,0 +1,4 @@
+.cv li {
+  @apply list-outside;
+  @apply list-disc;
+}

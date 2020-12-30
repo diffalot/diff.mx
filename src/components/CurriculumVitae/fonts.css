@@ -4,6 +4,18 @@ https://github.com/davidrzs/latexcss
 MIT-License
 */
 
+.cv {
+  font-family: 'Latin Modern Roman', serif;
+  counter-reset: theorem;
+  counter-reset: definition;
+  @apply md:text-justify;
+  @apply text-xl;
+}
+
+.cv .font-sans {
+  font-family: 'Latin Modern Roman', serif;
+}
+
 /* Latin Modern (LaTeX default) font */
 
 @font-face {

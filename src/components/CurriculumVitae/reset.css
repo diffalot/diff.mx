@@ -1,0 +1,7 @@
+.cv .font-black {
+  font-weight: normal;
+}
+
+.cv a.header-anchor.before {
+  display: none;
+}
