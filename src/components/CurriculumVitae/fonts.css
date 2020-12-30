@@ -8,7 +8,7 @@ MIT-License
   font-family: 'Latin Modern Roman', serif;
   counter-reset: theorem;
   counter-reset: definition;
-  @apply md:text-justify;
+  @apply sm:text-justify;
   @apply text-xl;
 }
 
