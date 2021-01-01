@@ -7,7 +7,7 @@ import './markdown.css'
 
 const Layout = ({ children }) => {
   console.log({ children })
-  return <div className="cv sm:container mx-auto">{children}</div>
+  return <div className="cv sm:container mx-auto px-5 py-28">{children}</div>
 }
 
 Layout.propTypes = {
