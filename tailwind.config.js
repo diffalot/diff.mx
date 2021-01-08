@@ -9,7 +9,11 @@ module.exports = {
       xl: '1024px',
       '2xl': '1024px'
     },
-    extend: {}
+    extend: {
+      screens: {
+        print: { raw: 'print' }
+      }
+    }
   },
   variants: {
     extend: {}

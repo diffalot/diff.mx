@@ -8,8 +8,7 @@ MIT-License
   font-family: 'Latin Modern Roman', serif;
   counter-reset: theorem;
   counter-reset: definition;
-  @apply sm:text-justify;
-  @apply text-xl;
+  @apply print:text-sm;
 }
 
 .cv .font-sans {
