@@ -16,6 +16,7 @@ const Layout = ({ children }) => (
         <>
           <Header siteTitle={data.site.siteMetadata.title} />
           <div className="container m-auto">{children}</div>
+          <Footer />
         </>
       )
     }}
