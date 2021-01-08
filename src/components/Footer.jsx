@@ -10,7 +10,7 @@ import Twitter from '../images/twitter.inline.svg'
 
 const Footer = ({ githubURL, githubText }) => (
   <div className="bg-green-300 dark:bg-indigo-600 text-right">
-    <div className="container mx-auto px-6 py-24 font-bold">
+    <div className="md:flex md:justify-between md:flex-row-reverse container mx-auto px-6 py-24 font-bold">
       <div className="">
         {!githubURL ? (
           ''
@@ -33,7 +33,7 @@ const Footer = ({ githubURL, githubText }) => (
           </a>
         </p>
       </div>
-      <p className="pt-7">
+      <p className="pt-7 md:-mt-5">
         <a target="_blank" href="https://twitter.com/diffalot">
           <Twitter className="inline h-12 -mr-2" />
         </a>
