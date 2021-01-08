@@ -22,7 +22,7 @@ export default function PageTemplate({ data: { mdx } }) {
       githubURL={`${githubDirectory}${mdx.parent.relativePath}`}
       githubText={`/src/posts/${mdx.parent.relativePath}`}>
       <SEO title={mdx.frontmatter.title} />
-      <article className="font-serif prose prose-xl print:prose-sm p-4 xl:px-44 max-w-none sm:text-justify">
+      <article className="font-serif prose prose-xl print:prose-sm px-4 py-12 xl:px-44 max-w-none sm:text-justify">
         <p className="font-sans text-3xl font-black text-black py-4">
           {mdx.frontmatter.title}
         </p>
