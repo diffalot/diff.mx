@@ -13,7 +13,7 @@ export default function PageTemplate({ data: { mdx } }) {
   return (
     <Layout>
       <SEO title={mdx.frontmatter.title} />
-      <article className="font-serif prose md:prose-lg p-4 xl:px-44 xl:prose-xl max-w-none">
+      <article className="font-serif prose prose-xl print:prose-sm p-4 xl:px-44 max-w-none sm:text-justify">
         <p className="font-sans text-3xl font-black text-black py-4">
           {mdx.frontmatter.title}
         </p>
