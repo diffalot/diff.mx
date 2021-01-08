@@ -8,7 +8,7 @@ import { MDXProvider } from '@mdx-js/react'
  */
 const Aside = ({ children }) => {
   return (
-    <aside className="float-right w-2/5 m-2 p-2 text-xs text-sans bg-green-100 dark:bg-indigo-500 dark:text-gray-100">
+    <aside className="font-sans font-semibold text-just float-right w-2/5 mx-3 px-6 py-3 text-sm text-left bg-green-100 dark:bg-indigo-500 dark:text-gray-100">
       <MDXProvider>{children}</MDXProvider>
     </aside>
   )
