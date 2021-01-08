@@ -4,10 +4,13 @@ import React from 'react'
 
 const Header = ({ siteTitle }) => (
   <div className="bg-green-300 dark:bg-indigo-600">
-    <nav className="container m-auto p-4 xl:px-44">
-      <h1 className="inline text-2xl font-black">
-        <Link to="/">{siteTitle}</Link>
-      </h1>
+    <nav className="container m-auto p-4 xl:px-44 flex justify-between items-end">
+      <Link to="/" className="text-2xl font-black">
+        {siteTitle}
+      </Link>
+      <Link to="/resume" className=" ">
+        Hire Me
+      </Link>
     </nav>
   </div>
 )
