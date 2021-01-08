@@ -10,7 +10,7 @@ import Twitter from '../images/twitter.inline.svg'
 
 const Footer = ({ githubURL, githubText }) => (
   <div className="bg-green-300 dark:bg-indigo-600 text-right">
-    <div className="md:flex md:justify-between md:flex-row-reverse container mx-auto px-6 py-24 font-bold">
+    <div className="md:flex md:justify-between md:flex-row-reverse container mx-auto px-4 xl:px-44 py-24 font-bold">
       <div className="">
         {!githubURL ? (
           ''
