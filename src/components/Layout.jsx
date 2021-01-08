@@ -9,7 +9,7 @@ import './Layout.css'
 import 'prismjs/themes/prism-twilight.css'
 
 const Layout = layoutArgs => {
-  const { children, githubURL } = layoutArgs
+  const { children, githubURL, githubText } = layoutArgs
   console.log({ layoutArgs })
   return (
     <StaticQuery
@@ -20,7 +20,7 @@ const Layout = layoutArgs => {
           <>
             <Header siteTitle={data.site.siteMetadata.title} />
             <div className="container m-auto">{children}</div>
-            <Footer githubURL={githubURL} />
+            <Footer githubURL={githubURL} githubText={githubText} />
           </>
         )
       }}

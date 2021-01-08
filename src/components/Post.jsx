@@ -17,7 +17,9 @@ const githubDirectory =
 export default function PageTemplate({ data: { mdx } }) {
   console.log({ mdx })
   return (
-    <Layout githubURL={`${githubDirectory}${mdx.parent.relativePath}`}>
+    <Layout
+      githubURL={`${githubDirectory}${mdx.parent.relativePath}`}
+      githubText={`/src/posts/${mdx.parent.relativePath}`}>
       <SEO title={mdx.frontmatter.title} />
       <article className="font-serif prose prose-xl print:prose-sm p-4 xl:px-44 max-w-none sm:text-justify">
         <p className="font-sans text-3xl font-black text-black py-4">

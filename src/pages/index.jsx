@@ -6,10 +6,11 @@ import SEO from '../components/SEO'
 
 const githubURL =
   'https://github.com/diffalot/diff.mx/blob/master/src/pages/index.jsx'
+const githubText = '/src/pages/index.jsx'
 
 export default function MyFiles({ data: { allMdx } }) {
   return (
-    <Layout githubURL={githubURL}>
+    <Layout githubURL={githubURL} githubText={githubText}>
       <SEO title="" />
       <div className="p-4">
         {allMdx.edges
