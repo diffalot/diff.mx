@@ -12,7 +12,7 @@ export default function MyFiles({ data: { allMdx } }) {
   return (
     <Layout githubURL={githubURL} githubText={githubText}>
       <SEO title="" />
-      <div className="p-4">
+      <div className="p-4 xl:px-44">
         {allMdx.edges
           .sort(
             ({ node: a }, { node: b }) =>
