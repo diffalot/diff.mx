@@ -4,14 +4,19 @@
 
 html,
 body {
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
+  @apply overflow-x-hidden;
 }
 
 body {
+  /* screen */
   @apply bg-gray-50;
   @apply text-gray-800;
+
+  /* dark mode * /
   @apply dark:bg-gray-900;
   @apply dark:text-gray-300;
+
+  /* print */
+  @apply print:bg-white;
+  @apply print:text-black;
 }

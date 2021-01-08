@@ -13,8 +13,8 @@ export default function PageTemplate({ data: { mdx } }) {
   return (
     <Layout>
       <SEO title={mdx.frontmatter.title} />
-      <article className="font-serif prose prose-xl p-4">
-        <p className="font-sans text-6xl font-black text-black py-4">
+      <article className="font-serif prose md:prose-lg p-4 xl:px-44 xl:prose-xl max-w-none">
+        <p className="font-sans text-3xl font-black text-black py-4">
           {mdx.frontmatter.title}
         </p>
         <MDXRenderer>{mdx.body}</MDXRenderer>

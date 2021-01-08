@@ -1,17 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import './reset.css'
+import './page.css'
 import './fonts.css'
 import './markdown.css'
 
-const Layout = ({ children }) => {
-  console.log({ children })
-  return <div className="cv sm:container mx-auto px-5 py-28">{children}</div>
+const CV = ({ children }) => {
+  return (
+    <div className="cv m-auto xl:text-xl px-5 print:px-0 py-16 print:py-0">
+      <div className="xl:m-20">{children}</div>
+    </div>
+  )
 }
 
-Layout.propTypes = {
+CV.propTypes = {
   children: PropTypes.node.isRequired
 }
 
-export default Layout
+export default CV

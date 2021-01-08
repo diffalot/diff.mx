@@ -1,11 +1,14 @@
 .cv li {
   @apply list-outside;
   @apply list-disc;
-  @apply mb-1;
   @apply ml-6;
+  @apply sm:text-justify;
 }
 
 .cv p {
-  @apply mb-3;
-  @apply list-outside;
+  @apply sm:text-justify;
+}
+
+.cv {
+  @apply leading-5;
 }
