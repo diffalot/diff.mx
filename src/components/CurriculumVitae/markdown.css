@@ -2,11 +2,11 @@
   @apply list-outside;
   @apply list-disc;
   @apply ml-6;
-  @apply text-justify;
+  @apply lg:text-justify;
 }
 
 .cv p {
-  @apply text-justify;
+  @apply lg:text-justify;
 }
 
 .cv {
