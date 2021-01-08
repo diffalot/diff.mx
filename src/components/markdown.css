@@ -1,0 +1,5 @@
+.header-anchor svg {
+  @apply inline-block;
+  @apply mr-3;
+  height: 64px;
+}
