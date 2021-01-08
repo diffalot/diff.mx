@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
       <Link to="/" className="text-2xl font-black">
         {siteTitle}
       </Link>
-      <Link to="/resume" className=" ">
+      <Link to="/cv" className=" ">
         Hire Me
       </Link>
     </nav>
