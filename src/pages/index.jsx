@@ -8,7 +8,7 @@ export default function MyFiles({ data: { allMdx } }) {
   return (
     <Layout>
       <SEO title="" />
-      <div className="p-4 prose-xl">
+      <div className="p-4">
         {allMdx.edges
           .sort(
             ({ node: a }, { node: b }) =>
@@ -17,7 +17,7 @@ export default function MyFiles({ data: { allMdx } }) {
           .map(({ node }) => {
             return (
               <div key={node.id} className="pb-6">
-                <h1 className="font-sans font-black pb-3">
+                <h1 className="font-sans font-black text-2xl pb-3">
                   <a href={node.fields.slug}>{node.frontmatter.title}</a>
                 </h1>
                 <p className="font-serif">{node.excerpt}</p>
