@@ -6,6 +6,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Layout from './Layout'
 import SEO from './SEO'
 
+import './prism-synthwave84.css'
 import './markdown.css'
 
 // Provide common components here
