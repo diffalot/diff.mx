@@ -5,5 +5,5 @@
 }
 
 .header-anchor {
-  @apply float-right;
+  @apply float-right -mt-3;
 }
