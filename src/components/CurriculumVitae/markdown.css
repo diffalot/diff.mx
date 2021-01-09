@@ -7,6 +7,7 @@
 
 .cv p {
   @apply sm:text-justify;
+  @apply mb-3;
 }
 
 .cv {
