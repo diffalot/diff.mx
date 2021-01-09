@@ -11,9 +11,7 @@ const Header = ({ siteTitle }) => (
         {siteTitle}
       </Link>
       <PowButton>
-        <Link to="/cv" className="font-bold">
-          For Hire!
-        </Link>
+        <Link to="/cv">For Hire!</Link>
       </PowButton>
     </nav>
   </div>

@@ -1,23 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 .animate-pow-fg {
+  @apply text-blue-600;
   font-family: 'Bangers', cursive;
-  animation: pow-fg 5s infinite;
+  animation: pow-fg 10s infinite;
+  text-shadow: #333 1px 1.5px;
 }
 @keyframes pow-fg {
   0%,
   100% {
-    transform: rotate(-30deg);
+    transform: rotate(23deg);
     animationtimingfunction: cubic-bezier(0.8, 0, 1, 1);
   }
   50% {
-    transform: rotate(-25deg);
+    transform: rotate(15deg);
     animationtimingfunction: cubic-bezier(0, 0, 0.2, 1);
   }
 }
 
 .animate-pow-bg {
-  animation: pow-bg 5s infinite;
+  animation: pow-bg 10s infinite;
 }
 
 @keyframes pow-bg {
