@@ -2,7 +2,7 @@
 
 .animate-pow-fg {
   font-family: 'Bangers', cursive;
-  animation: pow-fg 2.5s infinite;
+  animation: pow-fg 5s infinite;
 }
 @keyframes pow-fg {
   0%,
