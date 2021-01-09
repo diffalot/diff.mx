@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import AnimatedPow from './AnimatedPow'
+import PowButton from './PowButton'
 
 const Header = ({ siteTitle }) => (
   <div className="bg-green-300 dark:bg-indigo-600">
@@ -10,11 +10,11 @@ const Header = ({ siteTitle }) => (
       <Link to="/" className="text-2xl font-black">
         {siteTitle}
       </Link>
-      <AnimatedPow>
+      <PowButton>
         <Link to="/cv" className="font-bold">
           For Hire!
         </Link>
-      </AnimatedPow>
+      </PowButton>
     </nav>
   </div>
 )

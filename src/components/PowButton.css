@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+.animate-pow-fg {
+  font-family: 'Bangers', cursive;
+  animation: pow-fg 2.5s infinite;
+}
+@keyframes pow-fg {
+  0%,
+  100% {
+    transform: rotate(-30deg);
+    animationtimingfunction: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: rotate(-25deg);
+    animationtimingfunction: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-pow-bg {
+  animation: pow-bg 5s infinite;
+}
+
+@keyframes pow-bg {
+  0%,
+  100% {
+    transform: skew(2deg, 2deg);
+    animationtimingfunction: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: skew(-2deg, -2deg);
+    animationtimingfunction: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
