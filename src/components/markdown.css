@@ -3,3 +3,7 @@
   @apply mr-3;
   height: 64px;
 }
+
+.header-anchor {
+  @apply float-right;
+}
