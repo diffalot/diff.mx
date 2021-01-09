@@ -9,7 +9,7 @@ import Pow from '../images/pow.inline.svg'
 const PowButton = ({ children }) => (
   <div className="fixed right-24 md:right-1/4">
     <Pow className="animate-pow-bg absolute h-36 -top-11 -left-11" />
-    <div className="animate-pow-fg absolute z-10 left-3 top-2 leading-tight text-center font-bold text-lg">
+    <div className="animate-pow-fg absolute z-10 left-2 top-2 leading-tight text-center font-bold text-lg">
       {children}
     </div>
   </div>
