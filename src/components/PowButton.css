@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-
 .animate-pow-fg {
-  @apply text-blue-600;
-  font-family: 'Bangers', cursive;
-  letter-spacing: 0.16rem;
   animation: pow-fg 12s infinite;
-  text-shadow: #333 1px 1.5px;
 }
 @keyframes pow-fg {
   0%,

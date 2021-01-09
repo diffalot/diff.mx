@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import PowButton from './PowButton'
+import ForHire from '../images/for-hire.inline.svg'
 
 const Header = ({ siteTitle }) => (
   <div className="bg-green-300 dark:bg-indigo-600">
@@ -11,7 +12,9 @@ const Header = ({ siteTitle }) => (
         {siteTitle}
       </Link>
       <PowButton>
-        <Link to="/cv">For Hire!</Link>
+        <Link to="/cv">
+          <ForHire className="relative w-12 -top-6 right-3" />
+        </Link>
       </PowButton>
     </nav>
   </div>
