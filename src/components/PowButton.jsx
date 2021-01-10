@@ -14,6 +14,7 @@ const PowButton = ({ children }) => {
   return (
     <animated.div
       onMouseEnter={() => setZoom({ zoom: 1.15 })}
+      onClick={() => setZoom({ zoom: 1.25 })}
       onMouseLeave={() => setZoom({ zoom: 1 })}
       style={style}
       className="transition-all fixed right-24 md:right-1/4 z-10 print:hidden">

@@ -24,5 +24,6 @@ body {
 a {
   @apply transition-all;
   @apply hover:text-purple-900;
+  @apply active:text-purple-900;
   @apply underline;
 }
