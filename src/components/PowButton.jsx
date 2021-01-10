@@ -17,7 +17,7 @@ const PowButton = ({ children }) => {
       onClick={() => setZoom({ zoom: 1.25 })}
       onMouseLeave={() => setZoom({ zoom: 1 })}
       style={style}
-      className="transition-all fixed right-24 md:right-1/4 z-10 print:hidden">
+      className="transition-all fixed right-32 -top-1 md:right-1/4 z-10 print:hidden">
       <Pow className="animate-pow-bg absolute h-52 -top-11 -left-11" />
       <div className="animate-pow-fg absolute z-10 left-2 top-2 leading-tight text-center font-bold text-lg">
         {children}
