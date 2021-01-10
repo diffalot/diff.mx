@@ -26,4 +26,5 @@ a {
   @apply hover:text-purple-900;
   @apply active:text-purple-900;
   @apply underline;
+  -webkit-tap-highlight-color: none;
 }
