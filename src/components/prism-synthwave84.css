@@ -7,17 +7,17 @@
 
 code[class*='language-'],
 pre[class*='language-'] {
-  color: #f92aad;
+  color: #2aadf9;
   text-shadow: 0 0 2px #100c0f, 0 0 5px #dc078e33, 0 0 10px #fff3;
   background: none;
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  @apply text-xs;
+  @apply text-base;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
-  @apply leading-4;
+  @apply leading-5;
 
   -moz-tab-size: 4;
   -o-tab-size: 4;
@@ -106,7 +106,7 @@ pre[class*='language-'] {
 .token.keyword,
 .token.selector .token.class,
 .token.builtin {
-  color: #f4eee4;
+  color: #79dbc3;
   text-shadow: 0 0 2px #393a33, 0 0 8px #f39f0575, 0 0 2px #f39f0575;
 }
 
