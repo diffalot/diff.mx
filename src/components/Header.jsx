@@ -13,7 +13,10 @@ const Header = ({ siteTitle }) => (
       </Link>
       <PowButton>
         <Link to="/cv">
-          <ForHire className="relative w-12 -top-6 right-3" />
+          <ForHire
+            style={{ width: '4.5rem', top: '.25rem', right: '-1rem' }}
+            className="relative"
+          />
         </Link>
       </PowButton>
     </nav>
