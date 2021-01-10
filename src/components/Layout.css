@@ -20,3 +20,9 @@ body {
   @apply print:bg-white;
   @apply print:text-black;
 }
+
+a {
+  @apply transition-all;
+  @apply hover:text-purple-900;
+  @apply underline;
+}

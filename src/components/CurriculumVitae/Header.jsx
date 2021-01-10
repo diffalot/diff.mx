@@ -7,12 +7,12 @@ const Header = ({ name, location, email, website }) => (
       {name}
     </h1>
     <div className="place-self-center">{location}</div>
-    <div className="place-self-center underline">
+    <div className="place-self-center">
       <a href={`mailto:${email}`} target="_blank">
         {email}
       </a>
     </div>
-    <div className="place-self-center underline">
+    <div className="place-self-center">
       <a href="/">{website}</a>
     </div>
   </div>

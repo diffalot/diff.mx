@@ -8,7 +8,7 @@ import ForHire from '../images/for-hire.inline.svg'
 const Header = ({ siteTitle }) => (
   <div className="bg-green-300 dark:bg-indigo-600">
     <nav className="container m-auto p-4 xl:px-44 flex justify-between items-end">
-      <Link to="/" className="text-2xl font-black">
+      <Link to="/" className="text-2xl font-black no-underline">
         {siteTitle}
       </Link>
       <PowButton>

@@ -23,6 +23,7 @@ const Footer = ({ githubURL, githubText }) => (
         )}
         <p className="pt-7">
           <a
+            className="no-underline"
             rel="license"
             target="_blank"
             href="https://creativecommons.org/licenses/by/4.0/"

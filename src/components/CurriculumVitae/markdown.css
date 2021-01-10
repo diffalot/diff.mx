@@ -13,3 +13,7 @@
 .cv {
   @apply leading-5;
 }
+
+.cv a {
+  @apply no-underline;
+}

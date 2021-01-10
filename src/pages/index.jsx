@@ -22,7 +22,9 @@ export default function MyFiles({ data: { allMdx } }) {
             return (
               <div key={node.id} className="pb-6">
                 <h1 className="font-sans font-black text-2xl pb-3">
-                  <a href={node.fields.slug}>{node.frontmatter.title}</a>
+                  <a className="no-underline" href={node.fields.slug}>
+                    {node.frontmatter.title}
+                  </a>
                 </h1>
                 <p className="font-serif">{node.excerpt}</p>
               </div>
