@@ -3,6 +3,8 @@
 - [ ] Link styles and hover/click effects
 - [x] use a green font color for code syntax highlighting
 - [ ] expand CV into a "hire me package" with a print me button that prints three documents: Cover Letter, CV, and Work Samples
+- [ ] add hover effects to footer social icons
+- [ ] refactor pow to exist at the layout level with props that can be switched based on page
 - [ ] switch mdx layout based on frontmatter
 - [ ] provide a template for presentations
 - [ ] provide a template for recipes
