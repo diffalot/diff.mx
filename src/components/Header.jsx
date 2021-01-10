@@ -11,14 +11,14 @@ const Header = ({ siteTitle }) => (
       <Link to="/" className="text-2xl font-black no-underline">
         {siteTitle}
       </Link>
-      <PowButton>
-        <Link to="/cv">
+      <Link to="/cv">
+        <PowButton>
           <ForHire
             style={{ width: '4.5rem', top: '.25rem', right: '-1rem' }}
             className="relative"
           />
-        </Link>
-      </PowButton>
+        </PowButton>
+      </Link>
     </nav>
   </div>
 )
