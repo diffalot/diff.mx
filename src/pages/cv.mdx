@@ -1,15 +1,102 @@
-import Layout from '../components/CurriculumVitae/CV'
-export default Layout
+import CV from '../components/CurriculumVitae/CV'
+export default CV
 
 import SEO from '../components/SEO'
 
 import Header from '../components/CurriculumVitae/Header'
 import Section from '../components/CurriculumVitae/Section'
 import Employment from '../components/CurriculumVitae/Employment'
+import Page from '../components/CurriculumVitae/Page'
+import Salutation from '../components/CurriculumVitae/Salutation'
 
 <SEO title="Alice Davis - CV" />
 
+<Page>
 <Header
+  className="print:pb-40"
+  name="Alice Davis"
+  location="San Francisco, CA"
+  email="alice@diff.mx"
+  website="https://diff.mx/"
+/>
+
+<Salutation />
+
+<!--
+PARAGRAPH ONE: State reason for letter, name the position or type of work you
+are applying for and identify source from which you learned of the opening.
+(i.e. Career Development Center, newspaper, employment service, personal
+contact).
+-->
+
+Through my participation in the Jackson Area Web and App Developers meetup I
+have had the pleasure of meeting you and other members of the EdgeTheory
+development team. After learning that you are hiring JavaScript developers, I
+gave you a call for more information about what EdgeTheory is looking for as
+they grow in the coming year, and I think EdgeThory could make good use of
+both my DevOps and frontend JavaScript experience as you grow your team. So
+here's my application for a position as a frontend engineer.
+
+<!--
+PARAGRAPH TWO: Indicate why you are interested in the position, the company,
+its products, services - above all, stress what you can do for the employer.
+If you are a recent graduate, explain how your academic background makes you
+a qualified candidate for the position. If you have practical work
+experience, point out specific achievements or unique qualifications. Try not
+to repeat the same information the reader will find in the resume. Refer the
+reader to the enclosed resume or application which summarizes your
+qualifications, training, and experiences. The purpose of this section is to
+strengthen your resume by providing details which bring your experiences to
+life.
+
+work experience
+  DevOps
+    Source Code Management
+    CI Systems Design and Administration
+    Continuous Integration with Continuous Testing
+    Documentation Site Generation from Inline Documentation
+    Writing Training Materials
+  Javascript
+    Unit Testing
+    Cross Platform Integration Testing
+    Well versed in front end build tools
+    Cordova / Phonegap
+    Modular application design
+  HTML / CSS
+    Wireframing on paper and in html and css
+    UX Storytelling
+    Accessible Document Design
+    Semantically Correct HTML
+    Invited Expert on W3C
+    Extensive knowledge of Device and Browser capabilities
+-->
+
+<!--
+PARAGRAPH THREE: Request a personal interview and indicate your flexibility
+as to the time and place. Repeat your phone number in the letter and offer
+assistance to help in a speedy response. For example, state that you will be
+in the city where the company is located on a certain date and would like to
+set up an interview. Or, state that you will call on a certain date to set up
+an interview. End the letter by thanking the employer for taking time to
+consider your credentials.
+-->
+
+Attached to this letter you will find my resume and a list of links
+to relevant work samples.  Should you choose to set up an interview with me
+about a position with EdgeTheory, I will make myself available any time that
+you would like.  To schedule an interview please call or text (601) 255-4393 or
+email (alice@diff.mx)[mailto:andrew@diff.mx].  Thank you for your time
+and consideration.
+
+Sincerely yours,
+
+Alice Davis
+
+</Page>
+
+<Page>
+<Header
+  // className="hidden print:inline-block print:w-full"
   name="Alice Davis"
   location="San Francisco, CA"
   email="alice@diff.mx"
@@ -193,3 +280,89 @@ _[Congress Hotline](https://github.com/StayWokeOrg/general-congress-hotline)_ is
 References are available upon request
 
 </Section>
+</Page>
+
+<Page>
+<Header
+  // className="hidden print:inline-block print:w-full"
+  name="Alice Davis"
+  location="San Francisco, CA"
+  email="alice@diff.mx"
+  website="https://diff.mx/"
+/>
+<Section title="Work Samples">
+
+_censor-scan_ JavaScript
+Scrapes google trends for trending news stories in all available
+countries and attepts to access those stories from vpn connections
+around the world to detect active censorship
+
+<!--
+
+	\begin{itemize}  \itemsep -2pt %reduce space between items
+	\item source code: \href{https://git.diff.mx/diffalot/censor-scan}{https://git.diff.mx/diffalot/censor-scan}
+	\item phantom-scraper, a phantomjs scraping module was developed for
+		this project
+		\href{https://git.diff.mx/diffalot/phantom-scraper}{https://git.diff.mx/diffalot/phantom-scraper}
+	\end{itemize}
+
+	{\sl JacksonScript} \hfill JavaScript\\
+	A fork of the es-discuss mailing list web frontend to provide meetup
+	organization on top of a mailman mailing list rather than technical
+	notes of the meetings of a technical specification committee
+
+	\begin{itemize}  \itemsep -2pt %reduce space between items
+	\item site is currently offline because at the time of launch another
+		meetup group launched on meetup.com that fulfills the same goal
+		of providing a web development meetup group in Jackson
+	\item source code: \href{https://github.com/JacksonScript}{https://github.com/JacksonScript}
+	\end{itemize}
+
+	{\sl Trash Can Dot JPEG} \hfill JavaScript\\
+	A single page web application in the ionic angular framework with
+	enough image editing functionality to place any image in a trash can, a
+	collaboration with Susie Cagle
+
+	\begin{itemize}  \itemsep -2pt %reduce space between items
+	\item Development version: \href{https://trash-can-dot-jpeg.diff.mx/}{https://trash-can-dot-jpeg.diff.mx/}
+	\end{itemize}
+
+	{\sl essay} \hfill JavaScript\\
+	A command line static site generator tailored toward maintaining long
+	form articles and presentations with backwards compatibilty with Jekyll
+
+	\begin{itemize}  \itemsep -2pt %reduce space between items
+	\item source code: \href{https://git.diff.mx/diffalot/essay}{https://git.diff.mx/diffalot/essay}
+	\end{itemize}
+
+	{\sl mum} \hfill JavaScript\\
+	Utilities to ease the development of chatbots
+
+	\begin{itemize}  \itemsep -2pt %reduce space between items
+	\item presentation: \href{https://diff.mx/talks/build-bots/}{https://diff.mx/talks/build-bots/}
+	\item source code: \href{https://git.diff.mx/groups/mum}{https://git.diff.mx/groups/mum}
+	\end{itemize}
+
+	{\sl mtos} \hfill JavaScript\\
+	A secured and anonymized peer to peer social sharing network
+	currently in ui experimentation and protocol planning stage
+
+	\begin{itemize}  \itemsep -2pt %reduce space between items
+	\item source code: \href{https://git.diff.mx/mtos/mtos}{https://git.diff.mx/mtos/mtos}
+	\item README: \href{http://mtos.co/}{http://mtos.co/}
+	\end{itemize}
+
+	{\sl Other Code} \hfill miscellaneous\\
+	Most code is self hosted at
+	\href{https://git.diff.mx}{https://git.diff.mx}, but public
+	contributions happen where the project is hosted
+
+	\begin{itemize}  \itemsep -2pt %reduce space between items
+	\item npm modules: \href{https://www.npmjs.com/~diffalot}{https://www.npmjs.com/~diffalot}
+	\item public contributions on GitHub: \href{https://github.com/diffalot}{https://github.com/diffalot}
+	\item personal system configuration dotfiles: \href{https://git.diff.mx/groups/diff-files}{https://git.diff.mx/groups/diff-files}
+	\end{itemize}
+-->
+
+</Section>
+</Page>

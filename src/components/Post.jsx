@@ -12,8 +12,8 @@ import './markdown.css'
 // Provide common components here
 import shortcodes from './mdx-shortcodes'
 
-const githubDirectory =
-  'https://github.com/diffalot/diff.mx/blob/master/src/posts/'
+// prettier-ignore
+const githubDirectory = 'https://github.com/diffalot/diff.mx/blob/master/src/posts/'
 
 export default function PageTemplate({ data: { mdx } }) {
   console.log({ mdx })

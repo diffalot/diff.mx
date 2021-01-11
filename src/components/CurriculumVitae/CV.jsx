@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { MDXProvider } from '@mdx-js/react'
 
 import './page.css'
 import './fonts.css'
@@ -7,6 +8,7 @@ import './markdown.css'
 
 import PowButton from '../PowButton'
 import Print from '../../images/print.inline.svg'
+import Footer from '../Footer'
 
 const CV = ({ children }) => {
   const print = () => {
@@ -22,6 +24,7 @@ const CV = ({ children }) => {
         />
       </PowButton>
       <div className="xl:m-20">{children}</div>
+      <Footer />
     </div>
   )
 }
