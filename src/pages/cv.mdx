@@ -8,6 +8,7 @@ import Section from '../components/CurriculumVitae/Section'
 import Employment from '../components/CurriculumVitae/Employment'
 import Page from '../components/CurriculumVitae/Page'
 import Salutation from '../components/CurriculumVitae/Salutation'
+import PortfolioItem from '../components/CurriculumVitae/PortfolioItem'
 
 <SEO title="Alice Davis - CV" />
 
@@ -29,13 +30,6 @@ are applying for and identify source from which you learned of the opening.
 contact).
 -->
 
-Through my participation in the Jackson Area Web and App Developers meetup I
-have had the pleasure of meeting you and other members of the EdgeTheory
-development team. After learning that you are hiring JavaScript developers, I
-gave you a call for more information about what EdgeTheory is looking for as
-they grow in the coming year, and I think EdgeThory could make good use of
-both my DevOps and frontend JavaScript experience as you grow your team. So
-here's my application for a position as a frontend engineer.
 
 <!--
 PARAGRAPH TWO: Indicate why you are interested in the position, the company,
@@ -83,7 +77,7 @@ consider your credentials.
 
 Attached to this letter you will find my resume and a list of links
 to relevant work samples.  Should you choose to set up an interview with me
-about a position with EdgeTheory, I will make myself available any time that
+about a position with {{companyName}}, I will make myself available any time that
 you would like.  To schedule an interview please call or text (601) 255-4393 or
 email (alice@diff.mx)[mailto:andrew@diff.mx].  Thank you for your time
 and consideration.
@@ -269,9 +263,9 @@ Co-Organized Manhattan's _How to JavaScript_ meetup with 2000 members
 
 <Section title="Current Projects">
 
-_[rhyzo.me](https://github.com/diffalot/rhyzome)_ is an in browser p2p data propagation backend for sharing queryable serverfree protobuf messages. _[https://github.com/diffalot/rhyzome](https://github.com/diffalot/rhyzome)_
+_[ryzo.me](https://github.com/protest-technology/ryzome)_ is an in browser p2p data propagation backend for sharing queryable serverfree protobuf messages.
 
-_[Congress Hotline](https://github.com/StayWokeOrg/general-congress-hotline)_ is a Twilio backed Express app with a touch tone interface that helps people to search for their congressional representatives by entering their zip code and connects them to each representative in turn. _[https://github.com/StayWokeOrg/general-congress-hotline](https://github.com/StayWokeOrg/general-congress-hotline)_
+_[Congress Hotline](https://github.com/StayWokeOrg/general-congress-hotline)_ is a Twilio backed Express app with a touch tone interface that helps people to search for their congressional representatives by entering their zip code and connects them to each representative in turn.
 
 </Section>
 
@@ -292,19 +286,34 @@ References are available upon request
 />
 <Section title="Work Samples">
 
-_censor-scan_ JavaScript
+<PortfolioItem
+  name="https://ryzo.me"
+  homepage="https://ryzo.me"
+  status="in progress"
+  toolchain="p2p, identity, encryption"
+  link="https://git.diff.mx/diffalot/censor-scan"
+  image=""
+>
+
 Scrapes google trends for trending news stories in all available
 countries and attepts to access those stories from vpn connections
 around the world to detect active censorship
+</PortfolioItem>
+
+<PortfolioItem
+  name="censor-scan"
+  status="abandoned"
+  toolchain="Node.js, PhantomJS, scraper"
+  link="https://git.diff.mx/diffalot/censor-scan"
+  image=""
+>
+
+Scrapes google trends for trending news stories in all available
+countries and attepts to access those stories from vpn connections
+around the world to detect active censorship
+</PortfolioItem>
 
 <!--
-
-	\begin{itemize}  \itemsep -2pt %reduce space between items
-	\item source code: \href{https://git.diff.mx/diffalot/censor-scan}{https://git.diff.mx/diffalot/censor-scan}
-	\item phantom-scraper, a phantomjs scraping module was developed for
-		this project
-		\href{https://git.diff.mx/diffalot/phantom-scraper}{https://git.diff.mx/diffalot/phantom-scraper}
-	\end{itemize}
 
 	{\sl JacksonScript} \hfill JavaScript\\
 	A fork of the es-discuss mailing list web frontend to provide meetup
