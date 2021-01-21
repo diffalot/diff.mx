@@ -7,7 +7,7 @@ import Header from './Header'
 import Section from './Section'
 
 const Page = ({ children }) => (
-  <section className="pb-40" style={{ pageBreakAfter: 'always' }}>
+  <section className="pb-40" style={{ pageBreakInside: 'avoid' }}>
     <MDXProvider components={{ Employment, Header, Section }}>
       {children}
     </MDXProvider>

@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import { MDXProvider } from '@mdx-js/react'
 
 const Employment = ({ role, dates, company, children }) => (
-  <div style={{ pageBreakInside: 'avoid' }} className="mb-8">
-    <div className="mb-3">
+  <div style={{ pageBreakInside: 'avoid' }} className="mb-4">
+    <div className="mb-2">
       <div className="flex mb-0">
         <span className="italic flex-grow">{role}</span>
         <span className="text-right flex-shrink">{dates}</span>

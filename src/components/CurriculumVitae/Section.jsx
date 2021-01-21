@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { MDXProvider } from '@mdx-js/react'
 
 const Section = ({ title, children }) => (
-  <section className="flex flex-col md:flex-row print:flex-row align-top mb-3">
+  <section className="flex flex-col md:flex-row print:flex-row align-top mb-2">
     <h1 className="md:w-1/4 print:w-1/5 font-bold uppercase mr-3 mb-2">
       {title}
     </h1>
